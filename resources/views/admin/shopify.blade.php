@@ -32,7 +32,7 @@
           <h5>Personal-info</h5>
         </div>
         <div class="widget-content nopadding">
-          <form action="#" method="post" class="form-horizontal">
+          <form action="#" class="form-horizontal">
             <div class="control-group">
               <label class="control-label">Domain Spy :</label>
               <div class="controls">
@@ -47,7 +47,7 @@
             </div>
             
             <div class="form-actions">
-              <button type="submit" class="btn btn-success js-checkShopify" >Check</button>
+              <button class="btn btn-success js-checkShopify" >Check</button>
             </div>
           </form>
         </div>

@@ -26,8 +26,6 @@ Route::group(['middleware' => ['auth']], function() {
 
    //shopify spy
    Route::get('/admin/shopify', 'AdminController@getSpyShopify');
-   Route::match(['get', 'post'],'/admin/spying', 'AdminController@getDataSpy');
-   Route::get('/admin/shopify-show', 'AdminController@getSpyShopify');
    Route::get('/admin/shopify-give-content/{domain}/{page}','AdminController@shopifyGiveContent');
 
 });

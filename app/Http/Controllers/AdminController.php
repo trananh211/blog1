@@ -100,30 +100,6 @@ class AdminController extends Controller
         return view('/admin/shopify');
     }
 
-    public function getDataSpy(Request $request) {
-        $data = $request->input();
-        $domain = $data['domain'];
-        $page = $data['page'];
-        
-        // $context = stream_context_create(
-        //     array(
-        //         "http" => array(
-        //             "header" => "User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.102 Safari/537.36"
-        //         )
-        //     )
-        // );
-        // $best = '/collections/all?page='.$page.'&sort_by=best-selling';
-        // $url = $domain.$best;
-        // $html = file_get_contents($url, false, $context); //get the html returned from the following url
-        // $data['html'] = str_replace('href="/products','href="'.$domain.'/products',$html);
-
-        return view('admin/shopify')->with(
-            array(
-                'data'=>$data,
-                'success' => 'Alread Apply for this post')
-        );
-    }
-
     public function shopifyGiveContent($domain,$page)
     {  
         $context = stream_context_create(
