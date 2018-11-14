@@ -54,6 +54,7 @@
 <script src="{{ asset('source/js/jquery.validate.js') }}"></script> 
 <script src="{{ asset('source/js/matrix.js') }}"></script> 
 <script src="{{ asset('source/js/matrix.form_validation.js') }}"></script>
+<script src="{{ asset('js/my-custom.js') }}"></script>
 
 <script type="text/javascript">
   // This function is called from the pop-up menus to transfer to

@@ -23,6 +23,13 @@ Route::group(['middleware' => ['auth']], function() {
    Route::get('/admin/setting','AdminController@setting');
    Route::get('/admin/check-pwd', 'AdminController@checkPass');
    Route::match(['get', 'post'], '/admin/update-pwd', 'AdminController@updatePass');
+
+   //shopify spy
+   Route::get('/admin/shopify', 'AdminController@getSpyShopify');
+   Route::match(['get', 'post'],'/admin/spying', 'AdminController@getDataSpy');
+   Route::get('/admin/shopify-show', 'AdminController@getSpyShopify');
+   Route::get('/admin/shopify-give-content/{domain}/{page}','AdminController@shopifyGiveContent');
+
 });
 
 Route::get('auth/register','AdminController@register');

@@ -47,8 +47,6 @@
             </div>
         </div>
         <div class="form-actions">
-            <span class="pull-left"><a href="#" class="flip-link btn btn-info" id="to-recover">Lost password?</a></span>
-            <span class="pull-left"><a href="{{ url('auth/register') }}" class="flip-link btn btn-info" id="to-recover">Register</a></span>
             <span class="pull-right">
                 <button class="btn btn-success float-right" value="login" type="submit">Login</button>
             </span>
